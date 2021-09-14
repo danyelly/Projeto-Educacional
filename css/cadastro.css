@@ -13,7 +13,7 @@
 
 /*************LOGIN PANEL*************/
 
-#login_panel {
+#cadastro_panel {
     width: 50%;
     height: 100%;
     background-color: var(--color_light_default);
@@ -28,11 +28,11 @@
 
 /************* LOGO PANEL*************/
 
-#logo_panel {
+#logo_panel_cad {
     width: 50%;
     height: 100%;
     background-color: var(--color_dark_default);
-    background-image: url(../images/logo.jpg);
+    background-image: url(../images/museu.jfif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -46,7 +46,7 @@
 
 /* informa q o form_panel eatá dentro do login_panel */
 
-#login_panel>#form_panel {
+#cadastro_panel>#form_panel {
     width: 70%;
     padding-top: 30px;
     height: auto;
@@ -74,7 +74,7 @@
 
 /* ********FORM******* */
 
-#form_panel>#form_login {
+#form_panel>#form_cadastro {
     /* background-color:red; */
     height: 80%;
     width: 100%;
@@ -91,7 +91,7 @@
 
 /* ********INPUTS******* */
 
-#form_login>.input_field {
+#form_cadastro>.input_field {
     height: 35px;
     margin-bottom: 6px;
     outline: none;
@@ -103,7 +103,7 @@
     padding-left: 8px;
 }
 
-#form_login>button {
+#form_cadastro>button {
     height: 30px;
     background: linear-gradient( 100deg, rgba(158, 119, 69, 0.849), rgba(102, 80, 50, 0.87));
     font-size: 15px;
@@ -119,18 +119,21 @@
     border: 1px solid rgba(63, 103, 100, 0.849);
     justify-content: center;
     margin-left: 175px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
 }
 
 
 /* pseudo clássico */
 
-#form_login>button:hover {
+#form_cadastro>button:hover {
     background-color: yellowgreen;
     transform: scale(1.02);
     transition: 0.9s;
 }
 
-#form_login>.input_field:focus {
+#form_cadastro>.input_field:focus {
     background-color: rgba(249, 247, 243, 0.849);
 }
 

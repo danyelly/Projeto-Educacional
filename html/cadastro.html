@@ -6,37 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Tela de Cadastro para acesso à Plataforma">
-    <link rel="stylesheet" href="./plugin/fontawesome/css/fontawesome.min.css">
-    <link rel="shortcut icon" href="./images/graduation-cap-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../plugin/fontawesome/css/fontawesome.min.css">
+    <link rel="shortcut icon" href="../images/address-card.svg" type="image/x-icon">
     <!-- coloca o icon na guia-->
-    <link rel="stylesheet" href="./css/import.css">
+    <link rel="stylesheet" href="../css/import.css">
     <title>Cadasatro Museu</title>
 </head>
 
 <body>
     <main id="main_panel">
-        <section id="logo_panel">
+        <section id="logo_panel_cad">
 
         </section>
-        <section id="login_panel">
+        <section id="cadastro_panel">
             <div class="animation-up" id="form_panel">
                 <div id="title_panel">
-                    <h1>Login</h1>
-                    <a href="#">Cadastre-se</a>
+                    <h1>Cadastro</h1>
+                    <a href="../index.html">Voltar</a>
                 </div>
-
-                <form id="form_login">
+                <form id="form_cadastro">
+                    <label for="nome">Nome:</label>
+                    <input placeholder="Digite o seu nome" class="input_field" type="text" id="nome">
+                    <label for="cpf">CPF:</label>
+                    <input placeholder="Digite o seu CPF (apenas números)" class="input_field" type="number" id="cpf">
                     <label for="e-mail">Email</label>
                     <input placeholder="Digite o seu email" class="input_field" type="email" id="e-mail">
+                    <label for="datanasc">Data Nasc.:</label>
+                    <input placeholder="Digite a sua data de nascimento" class="input_field" type="date" id="data">
+                    <label for="genero">Gênero:</label>
+                    <select name="genero" id="gen" class="input_field">
+                            <option value="fem">Feminino</option>
+                            <option value="masc">Masculino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+
                     <label for="pass">Senha</label>
                     <input placeholder="Digite sua senha" class="input_field" type="password" id="pass">
+                    <label for="pass">Confirma Senha</label>
+                    <input placeholder="Confirme sua senha" class="input_field" type="password" id="confpass">
                     <button type="submit">Entrar</button>
+
                 </form>
             </div>
-
-
         </section>
-
     </main>
 </body>
 
